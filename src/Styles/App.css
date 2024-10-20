@@ -1,0 +1,44 @@
+.Footer-container{
+  display: flex;
+  justify-content: center;
+}
+.tag-line{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.ProjectHolder{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+ 
+}
+.Footer-container{
+  padding-top: 2.5rem;
+}
+.bentoGrid {
+  display: grid;  /* Use grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));  /* Responsive columns */
+  gap: 16px;  /* Space between grid items */
+  padding: 20px;  /* Padding around the grid */
+  justify-items: center;  /* Center items in their grid cells */
+  width: 100%; /* Full width for responsiveness */
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+.bentoGrid img {
+  width: 100%;  /* Make images responsive */
+  height: auto;  /* Maintain aspect ratio */
+  border-radius: 8px;  /* Optional: add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  /* Optional: add shadow */
+
+}
+
+/* Optional: Adjusting styles for smaller screens */
+@media (max-width: 600px) {
+  .bentoGrid {
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));  /* Adjust for smaller screens */
+  }
+}

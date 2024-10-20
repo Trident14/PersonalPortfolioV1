@@ -1,0 +1,72 @@
+.Project-section {
+    margin-top: 30px; /* Reduced margin for better spacing */
+    width: 100%; /* Full width for responsiveness */
+    max-width: 930px; /* Maintain a max width */
+    letter-spacing: -0.5px; /* Adjust letter-spacing for clarity */
+    margin: 0 auto; /* Center the div */
+    font-size: 2rem; /* Adjust font size for better readability */
+    line-height: 2.5rem; /* Ensure comfortable line spacing */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Default to column for mobile */
+    background-color: #f1f6fa; /* Background color */
+    border-radius: 1.5rem; /* Rounded corners */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+    min-height: 307px;
+}
+
+.project-image {
+    margin: 20px 0; /* Add vertical margins for spacing */
+    display: flex;
+    justify-content: center; /* Center image */
+    align-items: center;
+}
+
+.project-image img {
+    width: 100%; /* Responsive image */
+    max-width: 560px; /* Maintain max width */
+}
+
+.project-text {
+    padding-left: 2rem; /* Padding for text */
+}
+
+/* Styles for desktop */
+@media (min-width: 768px) {
+    .Project-section {
+        flex-direction: row; /* Change to row for desktop */
+        align-items: center; /* Align items vertically */
+    }
+
+    .project-text {
+        padding-left: 2rem; /* Keep text padding for desktop */
+        margin-left: 0; /* Remove left margin on desktop */
+    }
+
+    .project-image {
+        margin: 0; /* Remove margin for image on desktop */
+        margin-right: 20px; /* Add right margin for spacing */
+    }
+}
+
+/* Additional styles to make text and image responsive */
+.project-text h1 {
+    margin: 15px 0; /* Adjust margins */
+    color: #7facd4; /* Title color */
+}
+
+.project-cont h1 {
+    line-height: 1.6; /* Adjust line height */
+    margin: 5px; /* Adjust margins */
+    font-size: 1rem; /* Font size for description */
+}
+
+.project-view img {
+    width: 35px; /* Icon size */
+    cursor: pointer; /* Indicate it's clickable */
+}
+
+.Project-section:hover {
+    transition: all 0.2s ease 0s, transform 200ms ease 0s;
+    transform: scale(1.05); /* Subtle scale effect on hover */
+}
