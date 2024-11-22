@@ -38,7 +38,8 @@ const App = () => {
                     description="Embark on an exhilarating top-down pixel art adventure in Lantern Quest. Navigate through a vibrant overworld to collect the magical lantern, then delve into the treacherous dark dungeon. "
                     imageUrl={lanternquest} // Replace with actual image URL
                     altText="Lantern Quest screenshot"
-                    urlTo={"https://velociraptor10.itch.io/lantern-quest"} // Update with actual URL
+                    urlTo={"https://velociraptor10.itch.io/lantern-quest"} 
+                    youtubeUrl={"https://www.youtube.com/watch?v=WJ5RDBA62-o"}
                 />
                 <div className="bentoGrid">
                     <img src={image1} alt="" />

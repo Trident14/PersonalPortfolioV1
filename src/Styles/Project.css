@@ -70,3 +70,7 @@
     transition: all 0.2s ease 0s, transform 200ms ease 0s;
     transform: scale(1.05); /* Subtle scale effect on hover */
 }
+.project-view{
+    display: flex;
+    gap: 1.5rem;
+}

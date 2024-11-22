@@ -1,8 +1,9 @@
 import React from "react";
 import "../Styles/Project.css";
 import deploy from "../assets/deploy.svg";
+import youtube from "../assets/youtube.svg"; // Assuming you have a youtube icon
 
-const Project = ({ title, description, imageUrl, altText, bgColor, fontsize = "2rem", txtcolor, urlTo }) => {
+const Project = ({ title, description, imageUrl, altText, bgColor, fontsize = "2rem", txtcolor, urlTo, youtubeUrl }) => {
     return (
         <div className="Project-section" style={{ backgroundColor: bgColor }}>
             <div className="project-image">
@@ -17,7 +18,11 @@ const Project = ({ title, description, imageUrl, altText, bgColor, fontsize = "2
                     <a href={urlTo}>
                         <img src={deploy} alt="Deployment" />
                     </a>
-                    
+                    {youtubeUrl && (
+                        <a href={youtubeUrl}>
+                            <img src={youtube} alt="YouTube" />
+                        </a>
+                    )}
                 </div>
             </div>
         </div>
